@@ -1,0 +1,16 @@
+html{
+
+	font-weight: 90px;
+}
+li {
+	list-style-type: none;
+	display:inline;
+	color: rgb(100,20,20);
+    
+}
+a{
+    list-style-type: none;
+}
+a:hover{
+    background-color: yellow;   
+}
