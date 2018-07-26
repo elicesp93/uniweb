@@ -1,29 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta lang="es">
 	<meta charset="utf-8">
 	<title>Unizoom | Descuento para estudiantes</title>
     <link href="img/favicon.png" rel="icon">
-	<link href="css/style.css" rel="stylesheet">
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
 	
 </head>
 <body>
-    <div class="logo">
-        <a href="index.html"><img src="img/icono_logo.png"></a>
+    <div class="header">
+    <div class="logo col-sm-2">
+        <a href="index.html"><img src="img/icono_logo.png" alt="logo Unizoom"></a>
     </div>	
     <nav>
-            <a href="nosotros.html">Nosotros</a>
-			<a href="empresas.html">Empresas</a>
-            <a href="catalogo.html">Catálogo</a>
-			<a href="estudiantes.html">Estudiantes</a>
-			<a href="app.html">App</a>
-			<a href="contacto.html">Contacto</a>
+            <a href="nosotros.html" class="enlace">Nosotros</a>
+			<a href="empresas.html" class="enlace">Empresas</a>
+            <a href="catalogo.html" class="enlace">Catálogo</a>
+			<a href="estudiantes.html" class="enlace">Estudiantes</a>
+			<a href="app.html" class="enlace">App</a>
+			<a href="contacto.html" class="enlace">Contacto</a>
 		</nav>
+    </div>
+    
     <br>
-    <br>
-	<div>
-        <img src="img/chicas.jpg" width="100%">
+	<div class="cajaEmpresas row">
+        <div class=" fotocatalogo">
+            <img src="img/alfa1.JPG" alt="fotoAlfa">
+        </div>
+        <div class=" fotocatalogo">
+            <img src="img/redroo2.JPG" alt="fotoRedRoo">
+        </div>
+        <div class=" fotocatalogo">
+            <img src="img/aloha3.jpg" alt="fotoAloha">
+        </div>
+        <div class=" fotocatalogo">
+        <img src="img/r884.JPG" alt="fotoRestaurante88">
+        </div>
 	</div>
 	<div>
         <table align="center">
@@ -41,8 +56,18 @@
         </table>
 
 	</div>
-	<div>
-        <p>Aquí va el feed de Instagram</p>
+    <h3>Encuéntranos en Instagram</h3>
+	<div class="cInstagram" col-xs-4 col-lg-12>
+        
+        <div class="fInstagram">
+            <img src="img/gio2.jpg" width="300px">
+        </div>
+        <div class="fInstagram">
+            <img src="img/rest88.jpg" width="300px">
+        </div>
+        <div class="fInstagram">
+            <img src="img/universidadnoc.jpg" width="300px">
+        </div>
 	</div>
 	<div class="leads">
         <h2 class="blanco padding">De Universitarios para universitarios</h2>
