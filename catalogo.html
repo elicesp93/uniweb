@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta lang="es">
 	<meta charset="utf-8">
 	<title>Catálogo de empresas | Unizoom</title>
     <link href="img/favicon.png" rel="icon">
-	<link href="css/style.css" rel="stylesheet">
-	
+	 <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">    
 </head>
+    
 <body>
-     <div class="header">
-    <div class="logo col-sm-3 col-md-9">
+      <div class="header">
+    <div class="logo">
         <a href="index.html"><img src="img/icono_logo.png" alt="logo Unizoom"></a>
     </div>	
     <nav>
@@ -22,3 +22,42 @@
 			<a href="contacto.html">Contacto</a>
 		</nav>
     </div>
+        <br>
+    <div class="container">
+        <div class="col-sm-6"><p id="empresa1">e1 No Funciona</p></div>
+        <div class="col-sm-6"><p id="empresa2">e2 no funciona</p></div>
+        <div class="col-sm-6"><p id="empresa3">e3 NO funciona</p></div>
+        <div class="col-sm-6"><p id="empresa4">e4 No funciona</p></div>
+        <script>
+            function posi() {
+            var e1 = Math.floor((Math.random() * 4) + 1),
+                e2 = Math.floor((Math.random() * 4) + 1),
+                e3 = Math.floor((Math.random() * 4) + 1),
+                e4 = Math.floor((Math.random() * 4) + 1);
+                
+                document.getElementById("empresa1").innerHTML = e1;
+                
+                if(e2 == e1){
+                    e2 = Math.floor((Math.random() * 4) + 1);
+                } else {
+                    document.getElementById("empresa2").innerHTML = e2;
+                }
+                if(e3 == e2 || e3 == e1){
+                     e3 = Math.floor((Math.random() * 4) + 1);
+                } else {
+                   document.getElementById("empresa3").innerHTML = e3; 
+                }
+                if (e4 == e3 || e4 == e2 || e4 == e1){
+                    e4 = Math.floor((Math.random() * 4) + 1);
+                } else {
+                    document.getElementById("empresa4").innerHTML = e4;
+                }
+            
+            
+        } 
+            posi()
+        </script>
+       
+    </div>
+</body>
+</html>

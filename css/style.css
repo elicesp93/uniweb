@@ -1,6 +1,4 @@
-body{
-    font-family: Futura, sans-serif;
-}
+
 h2{
     font-size: 36px;
 }
@@ -10,6 +8,15 @@ h3{
     color: white;
     background-color: #2daae1;
     }
+p.letra{
+    padding-top: 10px;
+    font-size: 20px;
+}
+p.cita{
+    font-family: serif;
+    font-style: italic;
+    font-size: 24px;
+}
 nav {
     padding-top: 20px;
     padding-left: 20px;
@@ -39,15 +46,19 @@ li{
     
 }
 .footer{
-    background-image: url("../img/footer1.jpg");
-    background-size: cover;
-    height: 600px;
+    background-image: url("../img/footer2.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
     margin: 0px;
+
 }
 .blanco{
     color: white;
 }
-
+.imagenes{
+    width: 50%;
+}
 .padding{
     padding-left: 80px;
     padding-top: 200px;
@@ -74,6 +85,24 @@ li{
 .centrar{
     text-align: center;
 }
+.centro{
+    width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.centro2{
+    margin-top: 25px;
+}
+.centro3{
+  width: 20%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.centro4{
+    margin-top: 25px; 
+}
 .vertical{
     padding-top: 10px;
 }
@@ -88,15 +117,6 @@ li{
     padding: 10px 50px 0 50px;
    
 }
-.cajaEmpresas{
-    display: grid;
-    width: 90px;
-    
-    
-}
-.fotocatalogo{
-    width: 100px;
-}
 .cuerpoNosotros{
     display: block;
     text-align: justify;
@@ -108,11 +128,16 @@ li{
 }
 .sinpadding [class*="col-"] {
     margin: 0px;
+    padding: 0px;
 }
-#espacio{
+.espacio{
      padding: 15px;
         font-size: 18px;
         min-height: 20px;
         background: white;
         margin-bottom: 10px;
+}
+.botoncarousel{
+    top: 50px;
+    color: white;
 }

@@ -1,5 +1,34 @@
 .fondoAlfa{
-    background-image: url(../img/alfa/_DSC0685.JPG);
+    background-image: url(../img/alfa/alfa2.JPG);
     background-size: cover;
-    position: absolute;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+.fondoRedroo{
+    background-image: url(../img/redroo/redroo2.JPG);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+.fondoAloha{
+    background-image: url(../img/aloha/aloha2.jpeg);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+.fondoR88{
+    background-image: url(../img/r88/r882.JPG);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+.azul{
+    background-color: #2daae1 0.5;
+    background-size: cover;
+    width: 100%;
+    z-index: 1;
 }

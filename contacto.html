@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<meta lang="es">
 	<meta charset="utf-8">
 	<title>Contacto | Unizoom </title>
-    <link href="img/favicon.png" rel="icon">
+    <link href="img/iconos/favicon.png" rel="icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 	
 </head>
 <body>
-     <div class="header">
-    <div class="logo col-sm-3 col-md-9">
+    <div class="header">
+    <div class="logo">
         <a href="index.html"><img src="img/icono_logo.png" alt="logo Unizoom"></a>
     </div>	
     <nav>
@@ -24,7 +26,71 @@
     </div>
     <br>
     <br>
-    <h2>Contacta con nosotros</h2>
-
+    <div class="container">
+        <div class="row centrar">
+            <h1>Encuéntranos fácilmente</h1>
+            <br>
+            <br>
+        </div>
+        <div class="col-md-6 centrar">
+            <div class="col-md-6">
+                <p>Avenida Alicante sn, Taller de Imagen, San Vicente del Rapeig, Alicante 03062</p>
+            </div>
+            <div class="col-md-6">
+            <img src="img/iconos/casa.png" alt="icono casa" height="60px">
+            </div>
+            <div class="col-md-12 espacio"></div>
+            <div class="col-md-6">
+                <p>Teléfono 697 820 083</p>
+            </div>
+            <div class="col-md-6">
+            <img src="img/iconos/telefono.png" alt="icono teléfono" height="60px">
+            </div>
+            <div class="col-md-12 espacio"></div>
+            <div class="col-md-6">
+                <p>Email hola@unizoom.es</p>
+            </div>
+            <div class="col-md-6">
+            <img src="img/iconos/email.png" alt="icono email" height="60px">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="img/otros/oficina.jpg" alt="imagen oficina" align=right>
+        </div>
+        <div class="col-sm-12 centrar">
+            <br>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3127.372330371475!2d-0.5150451511144769!3d38.386639317772776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6236ba6caa292f%3A0x7706eafe3b8d5f57!2sEdificio+06-Taller+de+Imagen%2C+03690+San+Vicente+del+Raspeig%2C+Alicante!5e0!3m2!1ses!2ses!4v1532783407065" width=100% height=300px frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-md-12">
+             <br>
+            <hr>
+            <div class="row centrar">
+            <h2>O contacta conosotros</h2>
+            </div>
+            <div class="col-md-12">
+            <div class="bs-example">
+    <form>
+        <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre y un apellido">
+        </div>
+        <div class="form-group">
+            <label for="inputEmail">Email:</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        </div>
+         <div class="form-group">
+  <label for="comment">Cuéntanos:</label>
+  <textarea type="text" class="form-control" rows="5" id="comment" placeholder="¡Cuéntanos un poco!"></textarea>
+</div> 
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <br>
+        <br>
+        <br>
+    </form>
+</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
