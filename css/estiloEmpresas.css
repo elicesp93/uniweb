@@ -24,10 +24,9 @@
     background-size: cover;
     position: relative;
     width: 100%;
-    z-index: -1;
 }
 .azul{
-    background-color: #2daae1 0.5;
+    background-color: #2daae1;
     background-size: cover;
     width: 100%;
     z-index: 1;

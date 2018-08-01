@@ -29,24 +29,40 @@
         <div class="col-sm-6"><p id="empresa3">e3 NO funciona</p></div>
         <div class="col-sm-6"><p id="empresa4">e4 No funciona</p></div>
         <script>
-            function posi() {
-            var e1 = Math.floor((Math.random() * 4) + 1),
-                e2 = Math.floor((Math.random() * 4) + 1),
-                e3 = Math.floor((Math.random() * 4) + 1),
-                e4 = Math.floor((Math.random() * 4) + 1);
-            var i;
-                
-                document.getElementById("empresa1").innerHTML = e1;
-                
-               for(i=0; e2 == e1;i++){
-                   document.getElementById("empresa2").innerHTML = e2;
-               }
-            
-            
-        } 
-            posi()
+            function shuffle(array) {
+        var i = array.length,
+        j = 0,
+        temp;
+
+    while (i--) {
+        j = Math.floor(Math.random() * (i+1));
+
+        // swap randomly chosen element with current element
+        temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+        }
+
+        document.getElementById("empresa1").innerHTML = array[0];
+        document.getElementById("empresa2").innerHTML = array[1];
+        document.getElementById("empresa3").innerHTML = array[2];
+        document.getElementById("empresa4").innerHTML = array[3];
+}
+
+var ranNums = shuffle([1,2,3,4]);
+
+           window.onload=function(){
+var elem = document.createElement("img");
+elem.setAttribute("src", "img/alfa/alfa1.jpg");
+elem.setAttribute("width", "100%");
+elem.setAttribute("alt", "Flower");
+document.getElementById("empresa").appendChild(elem);
+}
+
+           
         </script>
-       
+
+       <div id="placehere" class="col-md-offset3 col-md-6 col-md-offset-3"></div>
     </div>
 </body>
 </html>
