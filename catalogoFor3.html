@@ -9,8 +9,7 @@
 </head>
     
 <body>
-    <div class="container">
-         <div class="header">
+      <div class="header">
     <div class="logo">
         <a href="index.html"><img src="img/icono_logo.png" alt="logo Unizoom"></a>
     </div>	
@@ -24,11 +23,12 @@
 		</nav>
     </div>
         <br>
+    <div class="container">
         <div class="col-sm-12 sinpadding">
-        <div class="col-sm-6" ><a id="enlace1" href=""><img id="imagen1" src="" class="img-responsive"></a></div>
-        <div class="col-sm-6" ><a id="enlace2" href=""><img id="imagen2" src="" class="img-responsive"></a></div>
-        <div class="col-sm-6" ><a id="enlace3" href=""><img id="imagen3" src="" class="img-responsive"></a></div>
-        <div class="col-sm-6" ><a id="enlace4" href=""><img id="imagen4" src="" class="img-responsive"></a></div>
+        <div class="col-sm-6" id="caja1"><a id="enlace1" href=""><img id="imagen1" src="" class="img-responsive"></a></div>
+        <div class="col-sm-6" id="caja2"><a id="enlace2" href=""><img id="imagen2" src="" class="img-responsive"></a></div>
+        <div class="col-sm-6" id="caja3"><a id="enlace3" href=""><img id="imagen3" src="" class="img-responsive"></a></div>
+        <div class="col-sm-6" id="caja4"><a id="enlace4" href=""><img id="imagen4" src="" class="img-responsive"></a></div>
         
         
         
@@ -62,15 +62,11 @@ var imgRandom = shuffle(imagenes);
 var aRandom = shuffle(enlaces);
 
             
-            document.getElementById("imagen1").setAttribute("src", imgRandom[0]);  
-            document.getElementById("imagen2").setAttribute("src", imgRandom[1]);
-            document.getElementById("imagen3").setAttribute("src", imgRandom[2]);
-            document.getElementById("imagen4").setAttribute("src", imgRandom[3]);
-
-            document.getElementById("enlace1").setAttribute("href", aRandom[0]);
-            document.getElementById("enlace2").setAttribute("href", aRandom[1]);
-            document.getElementById("enlace3").setAttribute("href", aRandom[2]);
-            document.getElementById("enlace4").setAttribute("href", aRandom[3]);
+            document.getElementById("caja1").setAttribute("href": aRandom[0],"src": imgRandom[0]);  
+            document.getElementById("caja2").setAttribute("href": aRandom[1],"src": imgRandom[1]);  
+            document.getElementById("caja3").setAttribute("href": aRandom[2],"src": imgRandom[2]);  
+            document.getElementById("caja4").setAttribute("href": aRandom[3],"src": imgRandom[3]);  
+            
             
             
 

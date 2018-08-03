@@ -8,14 +8,27 @@
     
 	<link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="css/style.css" rel="stylesheet">
+     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     
+    <script type="text/jscript"> 
+    $(document).ready(function(){
+    $("#bcalculadora").click(function(){
+    $("#calculadora").toggle();
+    
+        });
+    });
+    </script>
+	       <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="header">
+    
+    
+	<div class="container">
+        <div class="header">
     <div class="logo">
         <a href="index.html"><img src="img/icono_logo.png" alt="logo Unizoom"></a>
     </div>	
-    <nav>
+    <nav class="text-uppercase">
             <a href="nosotros.html">Nosotros</a>
 			<a href="empresas.html">Empresas</a>
             <a href="catalogo.html">Catálogo</a>
@@ -25,10 +38,8 @@
 		</nav>
     </div>
         <br>
-    <!-- Carousel: de  aquí -->
-	<div class="container">
 		<br>
-		<div class="col-sm-12">
+		<div class="col-sm-12"><!-- Carousel: de  aquí -->
 			<div id="carousel-1" class="carousel slide centrar" data-ride="carousel">
 				<!-- Indicadores -->
 				<ol class="carousel-indicators">
@@ -62,20 +73,17 @@
 					</div>
 				</div>
 				<!-- Controles -->
-				<a class="left carousel-control" href="#carousel-1" role="button" data-slide="prev">
-        
-               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-
-              </a>
-              <a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
+				<a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Siguiente</span>
+				</a>
 			</div>
-            <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-	       <script src="js/bootstrap.min.js"></script>
 		</div>
+	
         
     <!-- Carousel hasta aquí -->
      <div class="col-xs-12">
@@ -99,9 +107,22 @@
         <div class="col-md-12">
         <div class="row"><h2 class="headings">Beneficios zoomer</h2></div>
             <div class="col-md-3">
-        <h3>Calcula tu descuento</h3>
+        <button type="button" id="bcalculadora">Calcula tu descuento</button>
             </div>
-            <div class="col-md-9"></div>
+            <div class="col-md-9">
+                <div id="calculadora" class="oculto">
+                    <div class="col-xs-offset-2 col-sm-8 col-sm-offset-2 calculadora">
+                            <div class="col-sm-12" id="resultado">
+                            </div>
+                            <div class="col-sm-12"><button id="siete">7</button><button id="ocho">8</button><button id="nueve">9</button><button id="division">/</button></div>
+                            <div class="col-sm-12"><button id="cuatro">4</button><button id="cinco">5</button><button id="seis">6</button><button id="multiplicacion">*</button></div>
+                            <div class="col-sm-12"><button id="uno">1</button><button id="dos">2</button><button id="tres">3</button><button id="resta">-</button></div>
+                            <div class="col-sm-12"><button id="igual">=</button><button id="reset">C</button><button id="cero">0</button><button id="suma">+</button></div>
+        
+                            </div>
+                    <script src="js/funcionalidad.js"></script>
+                </div>
+            </div>
         </div>
         <div class="col-xs-12 sinpadding">
         <div class="footer">

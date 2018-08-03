@@ -11,11 +11,13 @@
 	
 </head>
 <body>
-    <div class="header">
+    
+    <div class="container">
+        <div class="header">
     <div class="logo">
         <a href="index.html"><img src="img/icono_logo.png" alt="logo Unizoom"></a>
     </div>	
-    <nav>
+    <nav class="text-uppercase">
             <a href="nosotros.html">Nosotros</a>
 			<a href="empresas.html">Empresas</a>
             <a href="catalogo.html">Catálogo</a>
@@ -26,7 +28,6 @@
     </div>
     
     <br>
-    <div class="container">
         <div class="col-sm-12 sinpadding">
             <div class="col-sm-6"><a href="empresa_1.html"><img src="img/alfa/alfa1.JPG" alt="fotoAlfa" class="img-responsive"></a></div>
             <div class="col-sm-6"><a href="empresa_2.html"><img src="img/redroo/redroo1.JPG" alt="fotoAlfa" class="img-responsive"></a></div>
@@ -53,7 +54,7 @@
         </div>
 
         <div class="col-xs-12">
-            <div class="row"><h3>Encuéntranos en Instagram</h3></div>
+            <div class="col-md-offset3 col-md-6 col-md-offset-3"><h2 class="headings">Encuéntranos en Instagram</h2></div>
 
 
                     <div class="col-sm-4">
@@ -72,16 +73,49 @@
             <div class="col-md-12 espacio"></div>
         </div>
     </div>
-	<div class=" col-md-12 leads">
-        <h2 class="blanco padding">De Universitarios para universitarios</h2>
-        <p class="blanco suscribete">¿Quieres ser el primero en enterarte del lanzamiento de nuestra App <br> y las principales novedades de Unizoom?</p>
-        <p class="blanco suscribete">Suscríbete a nuestro boletín y sé el primero en poder descargarte nuestra app</p>
-	</div>
-    
-    <div class="col-md-12 footer" width=70%>
-        <h2 class="blanco padding">¡Contáctanos!</h2>
-        <p class="blanco suscribete">Escríbenos a través del formulario o con la información siguiente:</p>
-        <ul class="blanco suscribete"><li><p>Telf: 654321897</p></li> <li><p>Instagram: @unizoom_</p></li><li><p>Email: unizoominfo@gmail.com</p></li></ul>
+	<div class=" col-md-12 ">
+        <div class="row"><h2 class="headings">De universitarios para universitarios</h2></div>
+        <div class="col-md-6 centrar">
+            <p class="">¿Quieres ser el primero en enterarte del lanzamiento de nuestra App y las principales novedades de Unizoom?</p>
+            <p class="">Suscríbete a nuestro boletín y serás el primero en poder descargarse nuestra app</p>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mformulario">
+  Suscribirse
+</button>
+            <!-- Modal -->
+<div class="modal fade" id="mformulario" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <form class="espacio">
+        <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre y un apellido">
+        </div>
+        <div class="form-group">
+            <label for="inputEmail">Email:</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        </div>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </form>
+        
+      </div>
     </div>
+  </div><!--fin modal -->
+        </div>
+        <div class="col-md-6">
+        <img src="img/otros/iluhorno.png" class="img-responsive centrar">
+        </div>
+
+</div>
+                   
+	
+    
+    <div class="col-md-12">
+        
+        <h2 class="headings" >¡Contáctanos!</h2>
+        <p >Escríbenos a través del formulario o con la información siguiente:</p>
+        <ul><li><p>Telf: 654321897</p></li> <li><p>Instagram: @unizoom_</p></li><li><p>Email: unizoominfo@gmail.com</p></li></ul>
+        
+    </div>
+    <img src="img/footer2.jpg" alt="footer" class="img-responsive">
 </body>
 </html>

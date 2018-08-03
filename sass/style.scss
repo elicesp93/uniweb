@@ -1,3 +1,7 @@
+$azul: #2daae1;
+$blanco: white;
+$azulito: rgba(102, 168, 221, 0.5);
+
 @each $empresa in (alfa2, redroo2, aloha2, r882)
 {
   .fondo#{$empresa} { 
@@ -8,63 +12,80 @@
       z-index: -1;
 }
 }
-h2{
-    font-size: 36px;
-}
-h3{
-    text-align: center;
-    font-size: 24px;
-    color: white;
-    background-color: #2daae1;
-    }
-
 p{
     .letra{
     padding-top: 10px;
     font-size: 20px;
 }
     .cita{
-    font-family: serif;
-    font-style: italic;
+        font:{
+            family: serif;
+            style: italic;
+            size: 24px;
+        }
+}
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    text-align: center;
     font-size: 24px;
-}
-}
+    color: $blanco;
+    background-color: $azul;
+    }
+
+
 nav {
-    padding-top: 20px;
-    padding-left: 20px;
+    padding: {
+        top: 20px;
+        left: 20px;
+    }
     display: inline;
     align-content: center;
+    a{
+        list-style-type: none;
+    color: $azul;
+    font-size: 16px;
+    padding-top: 6px;
+
+    &:hover {box-shadow: 0px 2px 0px 0px $azul}
+    
+    &:link {text-decoration: none;}
+    }
 }
 li{
     list-style: none;
 }
-.enlace{
-    list-style-type: none;
-    color: #2daae1;
-    font-size: 16px;
-    padding-top: 6px;
-
-    &:hover {box-shadow: 0px 2px 0px 0px #2daae1}
-    
-    &:link {text-decoration: none;}
+.jumbo{
+    min-height: 900px;
 }
-
-.leads{
-    background-image: url("../img/leads1.jpg");
-    background-size: cover;
-    height: 600px;
+.headingjumbo{
+    margin: 5px, 5px, 5px, 5px;
+    background: {
+        color: $azulito;
+    }
     
+}
+.leads{
+    background: {
+        image: url("../img/leads1.jpg");
+        size: cover;
+    }
+    height: 600px;
 }
 .footer{
-    background-image: url("../img/footer2.jpg");
-    background-repeat: no-repeat;
+    background: {
+        image: url("../img/footer2.jpg");
+        repeat: no-repeat;
+    }
     width: 100%;
     height: 100%;
     margin: 0px;
 
 }
 .blanco{
-    color: white;
+    color: $blanco;
 }
 .imagenes{
     width: 50%;
@@ -79,15 +100,17 @@ li{
     align-content: flex-end;
 }
 .logo{
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: {
+        top: 10px;
+        left: 10px;
+    }
 }
 .suscribete{
     padding-left: 80px;
 }
 .headings{
     text-align: center;
-    color: #2daae1;
+    color: $azul;
 }
 .justify{
     text-align: justify;
@@ -102,6 +125,7 @@ li{
   margin-right: auto;
 }
 .centro2{
+    @extend .centro;
     margin-top: 25px;
 }
 .centro3{
@@ -111,6 +135,7 @@ li{
   margin-right: auto;
 }
 .centro4{
+    @extend .centro3;
     margin-top: 25px; 
 }
 .centrarsugerencias{
@@ -138,9 +163,11 @@ li{
     text-align: justify;
 }
 .numero{
-    font-size: 30px;
-    font-weight: bold;
-    color: #2daae1;
+    font: {
+        size: 30px;
+        weight: bold;
+    }
+    color: $azul;
 }
 .sinpadding [class*="col-"] {
     margin: 0px;
@@ -154,11 +181,49 @@ li{
      padding: 15px;
         font-size: 18px;
         min-height: 20px;
-        background: white;
+        background: $blanco;
         margin-bottom: 10px;
 }
 .botoncarousel{
     top: 50px;
-    color: white;
+    color: $blanco;
 }
-
+#carousel-1 {
+  margin: 0 auto;
+  max-width: 96%;
+}
+margen{
+    margin-bottom: 40px;
+}
+.menuredes{display: inline;
+    align-content: center;}
+.fondotarjeta{
+    background-color: $azulito;
+}
+.oculto{
+    display: none;
+}
+.calculadora{
+      display:block;
+      margin:0 auto;
+      padding:20px;
+      background-color:#2daae1;
+      width:100%;
+      border-radius: 25px;
+        button{
+      display:inline;
+      width:25%;
+      font-size: 25px;
+    }
+    } 
+    #resultado{
+      display:block;
+      text-align: center;
+      font-size: 40px;
+      margin-bottom: 50px;
+      width:100%;
+      height: 100px;
+      line-height: 100px;
+      background-color:#fff;
+      overflow-y: scroll;
+    }
