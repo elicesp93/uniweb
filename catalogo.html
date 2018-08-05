@@ -5,6 +5,7 @@
 	<title>Catálogo de empresas | Unizoom</title>
     <link href="img/favicon.png" rel="icon">
 	 <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	<link href="css/style.css" rel="stylesheet">    
 </head>
     
@@ -23,61 +24,50 @@
 			<a href="contacto.html">Contacto</a>
 		</nav>
     </div>
-        <br>
+        <br> <!--catálogo-->
         <div class="col-sm-12 sinpadding">
-        <div class="col-sm-6" ><a id="enlace1" href=""><img id="imagen1" src="" class="img-responsive"></a></div>
-        <div class="col-sm-6" ><a id="enlace2" href=""><img id="imagen2" src="" class="img-responsive"></a></div>
-        <div class="col-sm-6" ><a id="enlace3" href=""><img id="imagen3" src="" class="img-responsive"></a></div>
-        <div class="col-sm-6" ><a id="enlace4" href=""><img id="imagen4" src="" class="img-responsive"></a></div>
-        
-        
-        
-        
-        <script>
-            var imagenes = ["img/alfa/alfa1.jpg", "img/redroo/redroo1.jpg", "img/aloha/aloha1.jpg", "img/r88/r881.jpg"];
-            var enlaces = ["empresa_1.html","empresa_2.html","empresa_3.html","empresa_4.html"];
+                <a id="enlace1" href="">
+                    <div class="col-sm-6 catalogo ">
+                        <img id="imagen1" src="" class="img-responsive">
+                        <div class="overlay">
+                            <div class="texto"><i class="fas fa-eye ojo"></i></div>
+                        </div>
+                    </div>
+                </a>
+                <a id="enlace2" href="">
+                        <div class="col-sm-6 catalogo ">
+                            <img id="imagen2" src="" class="img-responsive">
+                            <div class="overlay">
+                                <div class="texto"><i class="fas fa-eye ojo"></i></div>
+                            </div>
+                        </div>
+                </a>
+                <a id="enlace3" href="">
+                        <div class="col-sm-6 catalogo ">
+                            <img id="imagen3" src="" class="img-responsive">
+                            <div class="overlay">
+                                <div class="texto"><i class="fas fa-eye ojo"></i></div>
+                            </div>
+                        </div>
+                </a>
+                <a id="enlace4" href="">
+                        <div class="col-sm-6 catalogo ">
+                            <img id="imagen4" src="" class="img-responsive">
+                            <div class="overlay">
+                                <div class="texto"><i class="fas fa-eye ojo"></i></div>
+                            </div>
+                        </div>
+                    </a>
+                
+            <br>
+                <script src="js/automatico.js"></script>
             
-           function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
+                         
 
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-
-  return array;
-}
-
-// Used like so
-
-var imgRandom = shuffle(imagenes);
-var aRandom = shuffle(enlaces);
-
-            
-            document.getElementById("imagen1").setAttribute("src", imgRandom[0]);  
-            document.getElementById("imagen2").setAttribute("src", imgRandom[1]);
-            document.getElementById("imagen3").setAttribute("src", imgRandom[2]);
-            document.getElementById("imagen4").setAttribute("src", imgRandom[3]);
-
-            document.getElementById("enlace1").setAttribute("href", aRandom[0]);
-            document.getElementById("enlace2").setAttribute("href", aRandom[1]);
-            document.getElementById("enlace3").setAttribute("href", aRandom[2]);
-            document.getElementById("enlace4").setAttribute("href", aRandom[3]);
-            
-            
-
-        </script>
-
-       <div id="placehere" class="col-md-offset3 col-md-6 col-md-offset-3"></div>
-    </div>
-    </div ><!--fin col 12-->
+        </div> <!-- fin catalogo-->
+    </div ><!--fin container-->
+    <br>
+    <div class="sinpadding"><img src="img/footer2.jpg" class="img-responsive alturaminima" width="100%"></div>
+    
 </body>
 </html>

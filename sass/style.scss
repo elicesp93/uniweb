@@ -2,22 +2,32 @@ $azul: #2daae1;
 $blanco: white;
 $azulito: rgba(102, 168, 221, 0.5);
 
-@each $empresa in (alfa2, redroo2, aloha2, r882)
+@each $carpeta, $empresa in (alfa, alfa2), (redroo, redroo2), (aloha, aloha2), (r88, r882)
+       
 {
-  .fondo#{$empresa} { 
-      background-image: url('/images/carpeta/#{$empresa}.png');
+  .fondo#{$carpeta} { 
+      background-image: url(../img/#{$carpeta}/#{$empresa}.jpg);
       background-size: cover;
       position: relative;
       width: 100%;
-      z-index: -1;
 }
+    .fondon{
+        background-color: $azulito;
+        background-size: cover;
+        position: relative;
+        margin: -20px,-20px,-20px,-20px;
+        width: 100%;
+        min-height: 500px;
+        z-index: 1;
+    }
+.letra{
+    background-color: $azulito;
+    font: {
+        size: 20px;
+        
 }
-p{
-    .letra{
-    padding-top: 10px;
-    font-size: 20px;
-}
-    .cita{
+    }
+.cita{
         font:{
             family: serif;
             style: italic;
@@ -66,6 +76,11 @@ li{
         color: $azulito;
     }
     
+}
+sobrefondo{
+    background-color: $azulito;
+    position: absolute;
+    z-index: 1;
 }
 .leads{
     background: {
@@ -227,3 +242,55 @@ margen{
       background-color:#fff;
       overflow-y: scroll;
     }
+.alturaminima{
+ min-height: 30px;   
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $azul;
+}
+.catalogo {
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }   
+    &:hover .overlay {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+.ojo{
+    @extend .blanco;
+    font-size: 120px;
+    margin: {
+        top: 25%;
+        left: 38%;
+    }
+}
+ul {
+    font: {
+    size: 18px;
+    weight: bold;
+    }
+    color: $azul;
+        
+    }
+.rrss{
+    display: inline;
+    max-width: 40px;
+}
+.azul{
+    background-color: $azulito;
+    background-size: cover;
+    width: 100%;
+    
+}

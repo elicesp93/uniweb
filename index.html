@@ -7,6 +7,9 @@
 	
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	       <script src="js/bootstrap.min.js"></script>
     
 	
 </head>
@@ -27,33 +30,67 @@
 		</nav>
     </div>
     
-    <br>
+        <br> <!--catálogo-->
         <div class="col-sm-12 sinpadding">
-            <div class="col-sm-6"><a href="empresa_1.html"><img src="img/alfa/alfa1.JPG" alt="fotoAlfa" class="img-responsive"></a></div>
-            <div class="col-sm-6"><a href="empresa_2.html"><img src="img/redroo/redroo1.JPG" alt="fotoAlfa" class="img-responsive"></a></div>
-            <div class="col-sm-6"><a href="empresa_3.html"><img src="img/aloha/aloha1.jpg" alt="fotoAlfa" class="img-responsive"></a></div>
-            <div class="col-sm-6"><a href="empresa_4.html"><img src="img/r88/r881.JPG" alt="fotoAlfa" class="img-responsive"></a></div>
-            
-           
+                <a id="enlace1" href="">
+                    <div class="col-sm-6 catalogo ">
+                        <img id="imagen1" src="" class="img-responsive">
+                        <div class="overlay">
+                            <div class="texto"><i class="fas fa-eye ojo"></i></div>
+                        </div>
+                    </div>
+                </a>
+                <a id="enlace2" href="">
+                        <div class="col-sm-6 catalogo ">
+                            <img id="imagen2" src="" class="img-responsive">
+                            <div class="overlay">
+                                <div class="texto"><i class="fas fa-eye ojo"></i></div>
+                            </div>
+                        </div>
+                </a>
+                <a id="enlace3" href="">
+                        <div class="col-sm-6 catalogo ">
+                            <img id="imagen3" src="" class="img-responsive">
+                            <div class="overlay">
+                                <div class="texto"><i class="fas fa-eye ojo"></i></div>
+                            </div>
+                        </div>
+                </a>
+                <a id="enlace4" href="">
+                        <div class="col-sm-6 catalogo ">
+                            <img id="imagen4" src="" class="img-responsive">
+                            <div class="overlay">
+                                <div class="texto"><i class="fas fa-eye ojo"></i></div>
+                            </div>
+                        </div>
+                    </a>
+                
+            <br>
+                <script src="js/automatico.js"></script>
+        </div> <!-- fin catalogo-->
+        <div class="col-sm-12 espacio"><br><br></div>
+        <div class="col-sm-12 jumbotron"> <!-- beneficios -->
+            <div class="col-sm-6">
+                <h3>Beneficios para empresas</h3>
+                <ul>
+                    <li>Conecta con tu público objetivo</li>
+                    <li>Date a conocer</li>
+                    <li>Crea vínculos especiales</li>
+                </ul>
+        
+            </div>
+            <div class="col-sm-6">
+                <h3>Beneficios para estudiantes</h3>
+                 <ul>
+                    <li>Conoce oportunidades nuevas</li>
+                    <li>Descuentos exclusivos</li>
+                    <li>Sitios crema</li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <table align="center">
-                <tbody>
-                    <tr>
-                        <td><div><h3>Beneficio 1</h3></div></td>
-                        <td><div><h3>Beneficio 2</h3></div></td>
-                    </tr>
+        </div> <!--fin beneficios-->
 
-                  <tr>
-                        <td><div><h3>Beneficio 3</h3></div></td>
-                        <td><div><h3>Beneficio 4</h3></div></td>
-                    </tr>
-                </tbody>   
-            </table>
-
-        </div>
-
-        <div class="col-xs-12">
+        <div class="col-xs-12"> <!--instagram-->
             <div class="col-md-offset3 col-md-6 col-md-offset-3"><h2 class="headings">Encuéntranos en Instagram</h2></div>
 
 
@@ -71,28 +108,28 @@
                     <div class="col-sm-4"><h3>Descubre tu alrededor</h3></div>
             <div class=" col-md-12 espacio"></div>
             <div class="col-md-12 espacio"></div>
-        </div>
-    </div>
+        </div> <!-- fin instagram-->
+    
 	<div class=" col-md-12 ">
         <div class="row"><h2 class="headings">De universitarios para universitarios</h2></div>
         <div class="col-md-6 centrar">
             <p class="">¿Quieres ser el primero en enterarte del lanzamiento de nuestra App y las principales novedades de Unizoom?</p>
             <p class="">Suscríbete a nuestro boletín y serás el primero en poder descargarse nuestra app</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mformulario">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalindex">
   Suscribirse
 </button>
             <!-- Modal -->
-<div class="modal fade" id="mformulario" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="modalindex" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <form class="espacio">
         <div class="form-group">
             <label for="name">Nombre:</label>
-            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre y un apellido">
+            <input type="text" class="form-control" id="indexNombre" placeholder="Nombre y un apellido">
         </div>
         <div class="form-group">
             <label for="inputEmail">Email:</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            <input type="email" class="form-control" id="indexMail" placeholder="Email">
         </div>
           <button type="button" class="btn btn-primary">Enviar</button>
         </form>
@@ -116,6 +153,6 @@
         <ul><li><p>Telf: 654321897</p></li> <li><p>Instagram: @unizoom_</p></li><li><p>Email: unizoominfo@gmail.com</p></li></ul>
         
     </div>
-    <img src="img/footer2.jpg" alt="footer" class="img-responsive">
+    <div class="sinpadding"><img src="img/footer2.jpg" class="img-responsive alturaminima" width="100%"></div> 
 </body>
 </html>

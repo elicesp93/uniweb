@@ -1,36 +1,95 @@
-.fondoalfa2 {
-  background-image: url("/images/carpeta/alfa2.png");
+.fondoalfa {
+  background-image: url(../img/alfa/alfa2.jpg);
   background-size: cover;
   position: relative;
-  width: 100%;
-  z-index: -1; }
+  width: 100%; }
 
-.fondoredroo2 {
-  background-image: url("/images/carpeta/redroo2.png");
+.fondon {
+  background-color: rgba(102, 168, 221, 0.5);
   background-size: cover;
   position: relative;
+  margin: -20px,-20px,-20px,-20px;
   width: 100%;
-  z-index: -1; }
+  min-height: 500px;
+  z-index: 1; }
 
-.fondoaloha2 {
-  background-image: url("/images/carpeta/aloha2.png");
-  background-size: cover;
-  position: relative;
-  width: 100%;
-  z-index: -1; }
-
-.fondor882 {
-  background-image: url("/images/carpeta/r882.png");
-  background-size: cover;
-  position: relative;
-  width: 100%;
-  z-index: -1; }
-
-p .letra {
-  padding-top: 10px;
+.letra {
+  background-color: rgba(102, 168, 221, 0.5);
   font-size: 20px; }
 
-p .cita {
+.cita {
+  font-family: serif;
+  font-style: italic;
+  font-size: 24px; }
+
+.fondoredroo {
+  background-image: url(../img/redroo/redroo2.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100%; }
+
+.fondon {
+  background-color: rgba(102, 168, 221, 0.5);
+  background-size: cover;
+  position: relative;
+  margin: -20px,-20px,-20px,-20px;
+  width: 100%;
+  min-height: 500px;
+  z-index: 1; }
+
+.letra {
+  background-color: rgba(102, 168, 221, 0.5);
+  font-size: 20px; }
+
+.cita {
+  font-family: serif;
+  font-style: italic;
+  font-size: 24px; }
+
+.fondoaloha {
+  background-image: url(../img/aloha/aloha2.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100%; }
+
+.fondon {
+  background-color: rgba(102, 168, 221, 0.5);
+  background-size: cover;
+  position: relative;
+  margin: -20px,-20px,-20px,-20px;
+  width: 100%;
+  min-height: 500px;
+  z-index: 1; }
+
+.letra {
+  background-color: rgba(102, 168, 221, 0.5);
+  font-size: 20px; }
+
+.cita {
+  font-family: serif;
+  font-style: italic;
+  font-size: 24px; }
+
+.fondor88 {
+  background-image: url(../img/r88/r882.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100%; }
+
+.fondon {
+  background-color: rgba(102, 168, 221, 0.5);
+  background-size: cover;
+  position: relative;
+  margin: -20px,-20px,-20px,-20px;
+  width: 100%;
+  min-height: 500px;
+  z-index: 1; }
+
+.letra {
+  background-color: rgba(102, 168, 221, 0.5);
+  font-size: 20px; }
+
+.cita {
   font-family: serif;
   font-style: italic;
   font-size: 24px; }
@@ -71,6 +130,11 @@ li {
   margin: 5px, 5px, 5px, 5px;
   background-color: rgba(102, 168, 221, 0.5); }
 
+sobrefondo {
+  background-color: rgba(102, 168, 221, 0.5);
+  position: absolute;
+  z-index: 1; }
+
 .leads {
   background-image: url("../img/leads1.jpg");
   background-size: cover;
@@ -83,7 +147,7 @@ li {
   height: 100%;
   margin: 0px; }
 
-.blanco {
+.blanco, .ojo {
   color: white; }
 
 .imagenes {
@@ -228,3 +292,48 @@ margen {
   line-height: 100px;
   background-color: #fff;
   overflow-y: scroll; }
+
+.alturaminima {
+  min-height: 30px; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #2daae1; }
+
+.catalogo img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.catalogo:hover .overlay {
+  opacity: 0.8;
+  cursor: pointer; }
+
+.ojo {
+  font-size: 120px;
+  margin-top: 25%;
+  margin-left: 38%; }
+
+ul {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2daae1; }
+
+.rrss {
+  display: inline;
+  max-width: 40px; }
+
+.azul {
+  background-color: rgba(102, 168, 221, 0.5);
+  background-size: cover;
+  width: 100%; }
